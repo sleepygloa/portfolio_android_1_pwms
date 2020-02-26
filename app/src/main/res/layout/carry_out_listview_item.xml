@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/carry_out_item_text_goods_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/goods_code"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/carry_out_item_text_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/goods_name"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/carry_out_item_text_order_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/order_count"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/carry_out_item_text_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/loc"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/carry_out_item_text_plt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/plt"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+</LinearLayout>

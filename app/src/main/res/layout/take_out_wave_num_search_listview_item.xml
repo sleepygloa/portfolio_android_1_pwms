@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/take_out_item_line1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/take_out_wave_num_search_item_text_wave_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wave_num"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_wave_num_search_item_text_standard_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/standard_num"
+            android:textColor="#504f4f"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/take_out_wave_num_search_item_text_standard_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/standard_desc"
+            android:textColor="#504f4f"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

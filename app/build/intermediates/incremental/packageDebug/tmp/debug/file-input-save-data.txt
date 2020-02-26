@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Feb 27 07:16:39 KST 2020
+0.baseType=DIRECTORY
+0.base=D\:\\wms\\workspace\\VertexID-ANDROID\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

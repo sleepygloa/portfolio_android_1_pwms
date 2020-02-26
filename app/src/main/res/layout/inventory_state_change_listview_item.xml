@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/inventory_state_change_item_text_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/from_location"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_state_change_item_text_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/goods_code"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_state_change_item_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/goods_name"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_state_change_item_text_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/pltid"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_state_change_item_text_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_weight="1"
+        android:text="@string/inventory_count"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+</LinearLayout>

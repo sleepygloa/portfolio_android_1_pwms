@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_grp_warehouse"
+        android:checkableBehavior="none"
+        >
+
+        <item
+            android:id="@+id/menu_warehouse"
+            android:title="@string/warehouse_manage"
+            android:icon="@drawable/btn_maun_icon_01"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_takeout"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_takeout"
+            android:title="@string/take_out_manage"
+            android:icon="@drawable/btn_maun_icon_02"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_carry_in"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_carry_in"
+            android:title="@string/carry_in_manage"
+            android:icon="@drawable/btn_maun_icon_03"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_carry_out"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_carry_out"
+            android:title="@string/carry_out_manage"
+            android:icon="@drawable/btn_maun_icon_04"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_inventory"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_inventory"
+            android:title="@string/inventory_manage"
+            android:icon="@drawable/btn_maun_icon_05"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_search"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_search"
+            android:title="@string/search_manage"
+            android:icon="@drawable/btn_maun_icon_06"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_setting"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_setting"
+            android:title="@string/setting"
+            android:icon="@drawable/btn_maun_icon_07"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_grp_logout"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/btn_maun_icon_08"
+            />
+
+    </group>
+</menu>

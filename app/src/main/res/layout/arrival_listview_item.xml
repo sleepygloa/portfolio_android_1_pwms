@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/arrival_item_layout_text"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/arrival_item_check_select"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.18"
+            android:button	="@drawable/check_box_selector"/>
+
+        <TextView
+            android:id="@+id/arrival_item_text_goods"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="@string/goods"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/arrival_item_text_goods_name"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/goods_name"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/arrival_item_text_approval_count"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/approval_count"
+            android:textColor="#504f4f"
+            android:textSize="15sp"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/arrival_item_text_check_count"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/check_count"
+            android:textColor="#504f4f"
+            android:textSize="15sp"
+            android:textAlignment="textEnd"/>
+
+    </LinearLayout>
+
+</LinearLayout>

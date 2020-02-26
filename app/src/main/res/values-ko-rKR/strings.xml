@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WMS</string>
+
+    <string name="svr_addr">http://wms.vertexid.com</string>
+    <!--<string name="svr_addr">http://10.10.21.155:8080</string>-->
+    <string name="apk_path">/upload/wms.apk</string>
+
+    <string name="btn_login">로그인</string>
+    <string name="user_id">사용자ID</string>
+    <string name="user_pass">비밀번호</string>
+    <string name="welcome">WELCOME</string>
+    <string name="guide_id_n_pw">PLEASE INPUT YOUR ID AND PASSWORD</string>
+    <!--<string name="guide_id_n_pw"><![CDATA[<font color="#ffffff">PLEASE INPUT YOUR </font><font color="#ffbb64">ID</font><font color="#ffffff"> AND </font><font color="#ffbb64">PASSWORD</font>]]></string>-->
+
+    <string name="btn_logout">로그아웃</string>
+
+    <string name="notify_update">새로운 버전이 있습니다.\n업데이트 진행합니다.</string>
+
+    <string name="progress_update">업데이트 중입니다.</string>
+    <string name="progress_login">사용자 인증 중입니다.</string>
+    <string name="progress_logout">로그아웃 중입니다.</string>
+    <string name="progress_check">검수 중입니다.</string>
+    <string name="progress_req_list">목록 요청 중입니다.</string>
+    <string name="progress_req_warehouse_number">입고번호 요청중입니다.</string>
+    <string name="progress_confirm">확정 중입니다.</string>
+    <string name="progress_remove">삭제 중입니다.</string>
+    <string name="progress_req_carry_out_number">반출번호 요청 중입니다.</string>
+    <string name="progress_create">생성 중입니다.</string>
+    <string name="progress_plt_divide">PLT 분할 중입니다.</string>
+    <string name="progress_plt_merge">PLT 병합 중입니다.</string>
+    <string name="progress_save">저장 중입니다.</string>
+    <string name="progress_add">추가 중입니다.</string>
+    <string name="progress_req_wave_number_list">웨이브번호 조회중입니다.</string>
+    <string name="progress_req_goods_code_list">제품 조회 중입니다.</string>
+    <string name="progress_serial_scan">조회중입니다.</string>
+    <string name="progress_loading">상차 요청중입니다.</string>
+    <string name="progress_search">조회중입니다.</string>
+
+    <string name="login_user">Login User : </string>
+    <string name="customer_name">고객사</string>
+    <string name="working_day">작업일자</string>
+
+    <string name="menu_title">설정</string>
+
+    <string name="login_title">PARAGON WMS</string>
+    <!--<string name="login_title"><font color="#ffffff">PARAGON WMS</font></string>-->
+    <!--<string name="login_title"><![CDATA["<"]]>공지<![CDATA[">"]]></string>-->
+    <!--<string name="login_title"><![CDATA[<font color="#ffbb64">PARAGON WMS</font>]]></string>-->
+
+    <string name="main_scrn">WMS</string>
+    <string name="temp_inven_manage">1. 임의재고관리</string>
+    <string name="warehouse_manage">1. 입고관리</string>
+    <string name="take_out_manage">2. 출고관리</string>
+    <string name="carry_in_manage">3. 반입관리</string>
+    <string name="carry_out_manage">4. 반출관리</string>
+    <string name="inventory_manage">5. 재고관리</string>
+    <string name="search_manage">6. 조회관리</string>
+    <string name="setting">7. 환경설정</string>
+    <string name="logout">로그아웃</string>
+
+    <string name="warehouse_number_search">입고번호 조회</string>
+
+    <string name="arrive_check">1. 입하검수</string>
+    <string name="arrive_check_title">입하검수</string>
+    <string name="pile_up">2. 적치</string>
+    <string name="pile_up_title">적치</string>
+    <string name="carry_in_pile_up_title">반입적치</string>
+    <string name="picking_title">피킹</string>
+    <string name="serial_scan">3. 시리얼 스캔</string>
+    <string name="serial_scan_title">시리얼 스캔</string>
+    <string name="goods_inquiry">1. 제품조회</string>
+    <string name="goods_inquiry_title">제품조회</string>
+    <string name="loc_inquiry">2. LOC조회</string>
+    <string name="loc_inquiry_title">LOC조회</string>
+
+    <string name="carry_in_check">1. 반입검수</string>
+    <string name="carry_in_check_title">반입검수</string>
+    <string name="carry_in_check_search">반입조회</string>
+    <string name="carry_in_number">반입번호</string>
+    <string name="carry_in_category">반입구분</string>
+    <string name="carry_in_date">반입일자</string>
+
+    <string name="carry_out_number">반출번호</string>
+    <string name="carry_out_number_title">반출번호조회</string>
+    <string name="carry_out_date">반출일자</string>
+    <string name="carry_out_picking">반출피킹</string>
+
+    <string name="inventory_move">1. 재고이동</string>
+    <string name="inventory_move_title">재고이동</string>
+    <string name="inventory_temp_move">2. 임의재고이동</string>
+    <string name="inventory_temp_move_title">임의재고이동</string>
+    <string name="inventory_inquiry">3. 재고조사</string>
+    <string name="inventory_inquiry_title">재고조사</string>
+    <string name="inventory_create_title">재고신규등록</string>
+    <string name="inventory_state_change">4. 재고상태변경</string>
+    <string name="inventory_state_change_title">재고상태변경</string>
+    <string name="inventory_plt_divide">5. 파렛트분할</string>
+    <string name="inventory_plt_divide_title">파렛트분할</string>
+    <string name="inventory_plt_merge">6. 파렛트병합</string>
+    <string name="inventory_plt_merge_title">파렛트병합</string>
+
+    <string name="btn_title_search">검색</string>
+    <string name="btn_title_confirm">확정</string>
+    <string name="btn_title_total_confirm">전체확정</string>
+    <string name="btn_title_inquiry">조회</string>
+    <string name="btn_title_remove">삭제</string>
+    <string name="btn_title_total_remove">전체삭제</string>
+    <string name="btn_title_all_select">전체선택</string>
+    <string name="btn_title_new_regi">신규등록</string>
+    <string name="btn_title_save">저장</string>
+    <string name="btn_title_divide">분할</string>
+    <string name="btn_title_merge">병합</string>
+    <string name="btn_title_serial_add">추가</string>
+
+    <string name="goods">제품</string>
+    <string name="goods_code">제품코드</string>
+    <string name="goods_name">제품명</string>
+    <string name="order_count">지시수량</string>
+    <string name="approval_count">승인수량</string>
+    <string name="pile_up_count">적치수량</string>
+    <string name="check_count">검수수량</string>
+    <string name="picking_count">피킹수량</string>
+    <string name="inventory_count">재고수량</string>
+    <string name="divide_count">분할수량</string>
+    <string name="box_count">BOX수량</string>
+    <string name="ea_count">EA수량</string>
+    <string name="move_count">이동수량</string>
+    <string name="warehouse_number">입고번호</string>
+    <string name="scan_count">스캔수량</string>
+    <string name="scan_number">스캔번호</string>
+    <string name="merge_count">병합수량</string>
+    <string name="supplier">공급처</string>
+    <string name="delivery_name">배송처</string>
+    <string name="remove">삭제</string>
+    <string name="serial_number">시리얼번호</string>
+    <string name="order_number">지시번호</string>
+    <string name="pltid">PLT ID</string>
+    <string name="plt">PLT</string>
+    <string name="lot_id">LOT ID</string>
+    <string name="from_plt_id">대상PLTID</string>
+    <string name="to_plt_id">이동PLTID</string>
+    <string name="frompltid">From PLT ID</string>
+    <string name="topltid">To PLT ID</string>
+    <string name="divide_plt_id">분할PLTID</string>
+    <string name="merge_plt_id">병합PLTID</string>
+    <string name="real_count">실사수량</string>
+    <string name="real_category">실사유형</string>
+    <string name="plt_scan">PLT 스캔</string>
+    <string name="count">수량</string>
+    <string name="from_plt">대상 PLT</string>
+    <string name="to_plt">TO PLT</string>
+
+    <string name="from_location">대상LOC</string>
+    <string name="fromlocation">From LOC</string>
+    <string name="to_location">이동LOC</string>
+    <string name="tolocation">To LOC</string>
+    <string name="to_loc">To 로케이션</string>
+    <string name="location">로케이션</string>
+    <string name="set_location">지시LOC</string>
+    <string name="goods_barcode">제품바코드</string>
+
+    <string name="acquire">입수</string>
+    <string name="plt_acquire">PLT 입수</string>
+    <string name="goods_state">제품상태</string>
+    <string name="to_goods_state">To 제품상태</string>
+    <string name="normalty">정상</string>
+    <string name="bad">불량</string>
+    <string name="box">BOX</string>
+    <string name="ea">EA</string>
+    <string name="plt_id">파렛트ID</string>
+    <string name="manufacture_date">제조일자</string>
+    <string name="distribution_date">유통일자</string>
+    <string name="manufacture_lot">제조LOT</string>
+    <string name="lot1">LOT속성1</string>
+    <string name="lot2">LOT속성2</string>
+    <string name="lot3">LOT속성3</string>
+    <string name="lot4">LOT속성4</string>
+    <string name="lot5">LOT속성5</string>
+    <string name="loc">LOC</string>
+    <string name="loc_confirm">적치LOC\n확인</string>
+    <string name="picking_loc">피킹LOC</string>
+    <string name="pile_up_loc">적치LOC</string>
+    <string name="pile_up_loc_confirm">적치LOC확인</string>
+    <string name="goods_check">검수</string>
+    <string name="carry_out_reason">반출사유</string>
+
+    <string name="warehouse_date">입고일자</string>
+    <string name="warehouse_category">입고구분</string>
+    <string name="carry_out_category">반출구분</string>
+
+    <string name="total_count">총 100건</string>
+
+    <!-- 출고관리 시작 -->
+    <string name="picking">1. 피킹</string>
+    <string name="take_out_serial_scan">2. 출고시리얼 스캔</string>
+    <string name="picking_total">3. 피킹(총량)</string>
+    <string name="distribution">4. 분배</string>
+    <string name="take_out_loading">5. 출하상차</string>
+
+    <string name="take_out_list">출고목록</string>
+    <string name="take_out_list_num">출고번호</string>
+    <string name="product">제품</string>
+    <string name="delivery_address">배송처</string>
+    <string name="delivery_address_code">배송처코드</string>
+
+    <string name="direction_count">지시수량</string>
+    <string name="pallet_id">파렛트ID</string>
+    <string name="picking_loc_title">LOC</string>
+    <string name="pallet_id_title">PLT ID</string>
+
+    <string name="take_out_picking">출고피킹</string>
+    <string name="not_take_out_reason">미출고사유</string>
+    <string name="confirm">확정</string>
+
+    <string name="popup_show_not_take_out_reason">미출고사유를 선택해주세요.</string>
+
+    <string name="take_out_num_search">출고번호 조회</string>
+    <string name="take_out_date">출고일자</string>
+    <string name="take_out_classfication">출고구분</string>
+    <string name="take_out_serial_scan_text_title">출고시리얼 스캔</string>
+    <string name="select">선택</string>
+    <string name="confirm2">확인</string>
+
+    <string name="wave_num">웨이브번호</string>
+    <string name="wave_num_search">웨이브번호 조회</string>
+    <string name="wave_num_date">웨이브번호 생성일자</string>
+    <string name="wave_num_state">웨이브번호 상태</string>
+    <string name="take_out_picking_total">피킹(총량) 목록</string>
+    <string name="picking_btn">피킹</string>
+    <string name="distribution_btn">분배</string>
+
+    <string name="error_take_out_date">출고일자를 입력하세요.</string>
+    <string name="distribution_list">분배목록</string>
+    <string name="distribution_confirm">분배확정</string>
+    <string name="distribution_count">분배수량</string>
+    <string name="save">저장</string>
+    <string name="take_out_loading_title">출고상차</string>
+    <string name="take_out_loading_list_title">출고상차 리스트</string>
+    <string name="car_num">차량번호</string>
+
+    <string name="picking_box">피킹박스수</string>
+    <string name="picking_ea">낱개수</string>
+    <string name="picking_pallet">피킹파렛트</string>
+    <string name="loading_pallet">상차파렛트</string>
+
+    <string name="btn_loading">상차</string>
+
+    <string name="standard_num">기준번호</string>
+    <string name="standard_desc">기준설명</string>
+
+    <string name="take_out_picking_list_title">피킹리스트</string>
+
+    <!-- 출고관리 끝 -->
+
+    <string name="save_complete">저장되었습니다.</string>
+    <string name="divide_complete">분할되었습니다.</string>
+    <string name="merge_complete">병합되었습니다.</string>
+    <string name="confirm_complete">확정되었습니다.</string>
+    <string name="loading_complete">상차되었습니다.</string>
+    <string name="check_complete">검수완료되었습니다.</string>
+    <string name="pile_up_complete">적치완료되었습니다.</string>
+    <string name="add_complete">추가완료되었습니다.</string>
+
+    <!-- 조회관리 시작 -->
+    <string name="goods_inquiry_list">제품조회 리스트</string>
+    <string name="loc_inquiry_list">LOC조회 리스트</string>
+    <!-- 조회관리 끝 -->
+
+    <!-- 설정 시작-->
+    <string name="distribution_center">물류센터</string>
+    <string name="customer">고객사</string>
+    <string name="working_date">작업일자</string>
+    <!-- 설정 끝 -->
+
+    <string name="menu_user">사 용 자 : </string>
+    <string name="menu_center">물류센터 : </string>
+    <string name="menu_customer">고 객 사 : </string>
+
+    <string name="net_error_not_connect">네트워크 연결이 안 되어 있습니다.\n네트워크 연결을 확인해 주세요.</string>
+    <string name="net_error_not_svr">서버에 접속할 수 없습니다.</string>
+    <string name="net_error_fail_send">서버에 데이터 전달을 실패했습니다.</string>
+    <string name="net_error_fail_recv">서버로부터 데이터 수신에 실패했습니다.</string>
+    <string name="net_error_invalid_payload">서버로부터 잘못된 데이터를 수신했습니다.</string>
+    <string name="net_error_time_out">연결시간이 초과되었습니다.</string>
+    <string name="net_error_etc">내부 오류로 인해 네트워크 통신에 실패했습니다.</string>
+
+    <string name="success_confirm">확정에 성공하였습니다.</string>
+    <string name="fail_confirm">확정에 실패하였습니다.</string>
+    <string name="fail_check">검수에 실패하였습니다.</string>
+
+    <string name="not_exist_actuality">실사수량을 입력하세요.</string>
+    <string name="not_exist_car_num">차량번호를 입력하세요.</string>
+    <string name="not_exist_carry_in_number">반입번호를 입력하세요.</string>
+    <string name="not_exist_carry_out_number">반출번호를 입력하세요.</string>
+    <string name="not_exist_check_count">검수수량을 입력하세요.</string>
+    <string name="not_exist_confirm_list">확정 요청할 항목이 없습니다.</string>
+    <string name="not_exist_date">날짜를 입력하세요.</string>
+    <string name="not_exist_delivery_address">배송처를 입력하세요.</string>
+    <string name="not_exist_divide_count">분할수량을 입력하세요.</string>
+    <string name="not_exist_from_plt_id">대상 파렛트를 입력하세요.</string>
+    <string name="not_exist_from_loc">대상 위치를 입력하세요.</string>
+    <string name="not_exist_goods">제품을 입력하세요.</string>
+    <string name="not_exist_goods_code">제품코드를 입력하세요.</string>
+    <string name="not_exist_goods_state">제품상태를 입력하세요.</string>
+    <string name="not_exist_input_id">ID를 입력해주세요.</string>
+    <string name="not_exist_input_pass">비밀번호를 입력해주세요.</string>
+    <string name="not_exist_move_count">이동수량을 입력하세요.</string>
+    <string name="not_exist_list">서버로부터 요청하신 목록을\n수신하지 못하였습니다.</string>
+    <string name="not_exist_loc">위치를 입력하세요.</string>
+    <string name="not_exist_move_loc">이동LOC를 입력하세요.</string>
+    <string name="not_exist_to_loc">To LOC를 입력하세요.</string>
+    <string name="not_exist_loc_confirm">위치획인란에 위치를 입력하세요.</string>
+    <string name="not_exist_lot_id">LOT ID를 입력하세요.</string>
+    <string name="not_exist_order_number">지시번호를 입력하세요.</string>
+    <string name="not_exist_plt_id">파렛트 ID를 입력하세요.</string>
+    <string name="not_exist_plt_id_scan">파렛트ID를 스캔하세요.</string>
+    <string name="not_exist_to_plt_id">To PLT ID를 입력하세요.</string>
+    <string name="not_exist_plt_id_or_goods_code">파렛트ID 또는 제품코드를 입력하세요.</string>
+    <string name="not_exist_reason">미출고사유를 입력하세요.</string>
+    <string name="not_exist_serial_num">시리얼번호를 입력하세요.</string>
+    <string name="not_exist_supplier">공급처를 입력하세요.</string>
+    <string name="not_exist_take_out_category">출고구분를 입력하세요.</string>
+    <string name="not_exist_take_out_date">출고일자를 입력하세요.</string>
+    <string name="not_exist_take_out_number">출고번호를 입력하세요.</string>
+    <string name="not_exist_move_plt_id">이동 PLT ID를 입력하세요.</string>
+    <string name="not_exist_warehouse_category">입고구분을 입력하세요.</string>
+    <string name="not_exist_warehouse_date">입고일자를 입력하세요.</string>
+    <string name="not_exist_warehouse_number">입고번호를 입력하세요.</string>
+    <string name="not_exist_wave_date">웨이브 생성일자를 입력하세요.</string>
+    <string name="not_exist_wave_number">웨이브 번호를 입력하세요.</string>
+    <string name="not_exist_wave_state">웨이브 번호상태를 입력하세요.</string>
+    <string name="not_exist_picking_loc_scan">피킹위치를 스캔해주세요.</string>
+    <string name="not_exist_picking_plt_id_scan">파렛트ID를 스캔해주세요.</string>
+    <string name="not_exist_divide_plt_id">분할 파렛트ID를 입력하세요</string>
+    <string name="not_exist_divide_box">분할 BOX 수량을 입력하세요</string>
+    <string name="not_exist_divide_ea">분할 EA 수량을 입력하세요</string>
+    <string name="not_exist_merge_plt_id">병합파렛트 ID를 입력하세요</string>
+    <string name="not_exist_picking_count">피킹수량을 입력하세요.</string>
+    <string name="not_exist_loading_plt_id">상차파렛트가 없습니다.</string>
+    <string name="not_exist_carry_out_reason">반출사유를 입력하세요.</string>
+
+    <string name="not_equal_picking_loc_scan">위치 스캔 값이 다릅니다.</string>
+    <string name="not_equal_picking_plt_id_scan">파렛트ID 스캔 값이 다릅니다.</string>
+    <string name="not_equal_picking_loc">피킹 LOC 값이 다릅니다.</string>
+
+    <string name="more_than_inven_count">분할수량이 대상수량보다 많습니다.</string>
+
+</resources>

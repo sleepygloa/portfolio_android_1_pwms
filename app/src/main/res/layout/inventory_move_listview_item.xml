@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/inventory_move_item_text_from_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/from_location"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_move_item_text_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/goods"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_move_item_text_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/goods_name"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_move_item_text_order_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/order_count"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/inventory_move_item_text_to_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="@string/to_location"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <!--<TextView
+        android:id="@+id/inventory_move_item_text_plt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/pltid"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>-->
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/inventory_temp_move_loc_item_text_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/loc"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_temp_move_loc_item_text_plt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/pltid"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_temp_move_loc_item_text_box_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/box_count"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_temp_move_loc_item_text_ea_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/ea_count"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+</LinearLayout>

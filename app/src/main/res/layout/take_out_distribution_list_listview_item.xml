@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/take_out_divide_detail_item_text_delivery"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/direction_count"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/take_out_divide_detail_item_text_picking_box_count"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/picking_box"
+        android:textColor="#504f4f"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/take_out_divide_detail_item_text_picking_ea_count"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/picking_ea"
+        android:textColor="#504f4f"
+        android:textSize="15sp"
+        android:textAlignment="textEnd"/>
+
+</LinearLayout>

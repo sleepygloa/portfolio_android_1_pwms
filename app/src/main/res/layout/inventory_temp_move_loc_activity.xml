@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_temp_move_loc_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".InventoryTempMoveLocActivity">
+
+        <RelativeLayout
+            android:id="@+id/inventory_temp_move_loc_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <FrameLayout
+                android:id="@+id/inventory_temp_move_loc_layout_btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/inventory_temp_move_loc_btn_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/btn_menu_desc"
+                    android:background="@drawable/title_btn_selector"
+                    android:layout_gravity="center"
+                    android:clickable="false"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/inventory_temp_move_loc_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inventory_temp_move_loc_layout_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/temp_inven_manage"
+                android:textColor="#e9bf9a"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/inventory_temp_move_loc_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.5sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/inventory_temp_move_loc_text_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/inventory_temp_move_loc_layout_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/total_count"
+            android:textColor="#504f4f"/>
+
+        <LinearLayout
+            android:id="@+id/inventory_temp_move_loc_layout_list_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/inventory_temp_move_loc_text_total_count"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="#939393">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/loc"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pltid"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/box_count"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ea_count"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/inventory_temp_move_loc_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inventory_temp_move_loc_layout_list_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/inventory_temp_move_loc_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000"/>
+
+</android.support.v4.widget.DrawerLayout>

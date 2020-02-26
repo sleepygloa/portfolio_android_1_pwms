@@ -1,0 +1,68 @@
+package com.vertexid.wms.network.protocol;
+
+import com.vertexid.wms.info.InvenInquiryInfo;
+import com.vertexid.wms.network.NetworkParam;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/**
+ * 재고 신규 등록 요청 프로토콜 생성
+ */
+public class InvenCreateProtocol {
+    private InvenInquiryInfo mInfo = null;
+
+    public InvenCreateProtocol(InvenInquiryInfo info) {
+        mInfo = info;
+    }
+
+    /**
+     * 재고관리 파렛트 분할 요청을 처리하는 WAS 메소드 반환
+     * @return 재고관리 파렛트 분할 요청을 처리하는 WAS 메소드
+     */
+    public String getReqMethod() {
+        return "/ctrl/stock/stockInspPda/insertStockInspPda";
+    }
+
+    /**
+     * 재고관리 파렛트 분할 요청 내용 반환
+     * @return JSON 형식의 문자열.
+     */
+    public String getReqPayload() {
+        if (mInfo == null) {
+            return null;
+        }
+
+        JSONObject object = new JSONObject();
+
+        try {
+            object.put(NetworkParam.COMPANY_CODE, mInfo.getCompanyCode());
+            object.put(NetworkParam.CENTER_CODE_PRIOORD, mInfo.getCenterCode());
+            object.put(NetworkParam.CUSTOMER_CODE_PRIOORD, mInfo.getCustomerCode());
+            object.put(NetworkParam.USER_ID, mInfo.getUserId());
+
+            object.put(NetworkParam.GOODS_CODE, mInfo.getGoodsCode());
+            object.put(NetworkParam.GOODS_NAME, mInfo.getGoodsName());
+            object.put(NetworkParam.GOODS_STATE, mInfo.getGoodsState());
+            object.put(NetworkParam.INVEN_INQUIRY_BOX_COUNT, mInfo.getBoxCount());
+            object.put(NetworkParam.INVEN_INQUIRY_EA_COUNT, mInfo.getEaCount());
+            object.put(NetworkParam.INVEN_ACTUALITY_CATEGORY, mInfo.getActualityCategory());
+            object.put(NetworkParam.LOC_CD, mInfo.getLocation());
+            object.put(NetworkParam.PLT_ID, mInfo.getPltId());
+            object.put(NetworkParam.MAKE_DATE, mInfo.getMakeDate());
+            object.put(NetworkParam.EXPIRE_DATE, mInfo.getDistributionDate());
+            object.put(NetworkParam.MAKE_LOT, mInfo.getManufactureLot());
+            object.put(NetworkParam.LOT_ATTR1, mInfo.getLotAttribute1());
+            object.put(NetworkParam.LOT_ATTR2, mInfo.getLotAttribute2());
+            object.put(NetworkParam.LOT_ATTR3, mInfo.getLotAttribute3());
+            object.put(NetworkParam.LOT_ATTR4, mInfo.getLotAttribute4());
+            object.put(NetworkParam.LOT_ATTR5, mInfo.getLotAttribute5());
+            object.put(NetworkParam.LOC_CD, mInfo.getLocation());
+        }
+        catch (JSONException e) {
+            return null;
+        }
+
+        return object.toString();
+    }
+}

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_temp_move_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".InventoryTempMoveActivity">
+
+        <RelativeLayout
+            android:id="@+id/inventory_temp_move_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <FrameLayout
+                android:id="@+id/inventory_temp_move_layout_btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/inventory_temp_move_btn_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/btn_menu_desc"
+                    android:background="@drawable/title_btn_selector"
+                    android:layout_gravity="center"
+                    android:clickable="false"/>
+            </FrameLayout>
+            <!--<Button
+                android:id="@+id/inventory_temp_move_btn_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/btn_menu_desc"
+                android:background="@drawable/title_btn_selector"/>-->
+
+            <TextView
+                android:id="@+id/inventory_temp_move_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inventory_temp_move_layout_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/inventory_temp_move_title"
+                android:textColor="#e9bf9a"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/inventory_temp_move_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.15sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_temp_move_layout_buttons"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/inventory_temp_move_btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_middle_btn_selector"/>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="45.5dp"
+                android:background="@drawable/btn_botton_line">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/inventory_temp_move_btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/confirm_middle_btn_selector"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/inventory_temp_move_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/inventory_temp_move_layout_title"
+            android:layout_above="@+id/inventory_temp_move_layout_buttons">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/inventory_temp_move_layout_from_plt_id"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_plt_id"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_temp_move_edit_from_plt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_temp_move_layout_from_loc"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inventory_temp_move_layout_from_plt_id"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_location"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/inventory_temp_move_edit_from_loc"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:textColor="#504f4f"
+                            android:selectAllOnFocus="true"
+                            android:background="@drawable/input_box"/>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right">
+
+                            <Button
+                                android:id="@+id/inventory_temp_move_btn_loc_search"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:text="@string/btn_title_inquiry"
+                                android:textSize="10sp"
+                                android:textColor="#504f4f"
+                                android:background="@drawable/inquiry_btn_selector"/>
+
+                            <!--<ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_arrow"
+                                android:layout_gravity="center"/>-->
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_temp_move_layout_to_loc"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inventory_temp_move_layout_from_loc"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tolocation"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_temp_move_edit_to_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/inventory_temp_move_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000"/>
+
+</android.support.v4.widget.DrawerLayout>

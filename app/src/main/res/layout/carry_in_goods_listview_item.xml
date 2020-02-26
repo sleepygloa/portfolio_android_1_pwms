@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/carry_in_pile_up_goods_item_text_loction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/loc"
+        android:textColor="#504f4f"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/carry_in_pile_up_goods_item_text_goods_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/goods_code"
+        android:textColor="#504f4f"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/carry_in_pile_up_goods_item_text_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/goods_code"
+        android:textColor="#504f4f"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/carry_in_pile_up_goods_item_text_plt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/pltid"
+        android:textColor="#504f4f"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/carry_in_pile_up_goods_item_text_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/count"
+        android:textColor="#504f4f"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

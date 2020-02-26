@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_plt_divide_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".InventoryPltDivideActivity">
+
+        <RelativeLayout
+            android:id="@+id/inventory_plt_divide_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <FrameLayout
+                android:id="@+id/inventory_plt_divide_layout_btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/inventory_plt_divide_btn_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/btn_menu_desc"
+                    android:background="@drawable/title_btn_selector"
+                    android:layout_gravity="center"
+                    android:clickable="false"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/inventory_plt_divide_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inventory_plt_divide_layout_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/inventory_plt_divide_title"
+                android:textColor="#e9bf9a"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/inventory_plt_divide_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.15sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_btns"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/inventory_plt_divide_btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_middle_btn_selector"/>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="45.5dp"
+                android:background="@drawable/btn_botton_line">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/inventory_plt_divide_btn_divide"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/partition_middle_btn_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inventory_plt_divide_layout_title"
+            android:layout_above="@+id/inventory_plt_divide_layout_btns"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_from_plt_id"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_plt_id"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_from_plt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_list_title"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#939393">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_code"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_name"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lot_id"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/box_count"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ea_count"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/inventory_plt_divide_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_goods_code"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_code"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_goods_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_goods_name"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_name"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_goods_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_lot_id"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lot_id"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_lot_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_divide_count"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/divide_count"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/inventory_plt_divide_edit_divide_box"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:gravity="right"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:text="0"
+                                android:textSize="15sp"
+                                android:textColor="#504f4f"
+                                android:selectAllOnFocus="true"
+                                android:background="@drawable/input_selector"/>
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/box"
+                                android:textSize="15sp"
+                                android:textColor="#504f4f"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/inventory_plt_divide_edit_divide_ea"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:text="0"
+                                android:textSize="15sp"
+                                android:textColor="#504f4f"
+                                android:selectAllOnFocus="true"
+                                android:background="@drawable/input_selector"/>
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/ea"
+                                android:textSize="15sp"
+                                android:textColor="#504f4f"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inventory_plt_divide_layout_divide_plt_id"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/divide_plt_id"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_divide_plt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_loc"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_divide_layout_title"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/from_location"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/inventory_plt_divide_edit_loc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="#504f4f"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_from_plt_id"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_divide_layout_loc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/from_plt_id"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/inventory_plt_divide_edit_from_plt_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="#504f4f"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_inven_count"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_divide_layout_from_plt_id"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/inventory_count"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_inven_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:background="@drawable/input_selector"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/box"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_inven_ea"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:background="@drawable/input_selector"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/ea"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_divide_count"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_divide_layout_inven_count"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/divide_count"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_divide_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:background="@drawable/input_selector"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/box"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/inventory_plt_divide_edit_divide_ea"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:background="@drawable/input_selector"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/ea"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_to_loc"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_divide_layout_divide_count"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/to_loc"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/inventory_plt_divide_edit_to_loc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#504f4f"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_to_plt_id"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_divide_layout_to_loc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topltid"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/inventory_plt_divide_edit_to_plt_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#504f4f"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_divide_layout_list_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/inventory_plt_divide_layout_to_plt_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#939393">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_code"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_name"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/box_count"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ea_count"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_state"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tolocation"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_plt"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/inventory_plt_divide_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inventory_plt_divide_layout_list_title"
+            android:layout_above="@+id/inventory_plt_divide_layout_btns"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>-->
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/inventory_plt_divide_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/take_out_item_line1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/take_out_loading_btm_item_picking_pallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/picking_pallet"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/take_out_loading_btm_item_edit_loading_pallet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/input_selector"/>
+    </LinearLayout>
+</RelativeLayout>

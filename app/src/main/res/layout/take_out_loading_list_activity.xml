@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/take_out_loading_list_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:id="@+id/take_out_loading_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".TakeOutLoadingListActivity">
+
+        <RelativeLayout
+            android:id="@+id/take_out_loading_list_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <Button
+                android:id="@+id/take_out_loading_list_btn_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/btn_menu_desc"
+                android:background="@drawable/title_btn_selector"/>
+
+            <TextView
+                android:id="@+id/take_out_loading_list_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/take_out_loading_list_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/take_out_loading_list_title"
+                android:textColor="#e9bf9a"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/take_out_loading_list_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.15sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/take_out_loading_list_btn_loading"
+            android:layout_width="match_parent"
+            android:layout_height="45.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/car_load_big_btn_selector" />
+
+        <LinearLayout
+            android:id="@+id/take_out_loading_list_layout_delivery"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/take_out_loading_list_layout_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/delivery_address"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/take_out_loading_list_edit_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:background="@drawable/input_boxover"
+                android:textSize="15sp"
+                android:textColor="#504f4f"
+                android:selectAllOnFocus="true"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/take_out_loading_list_layout_picking_count"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/take_out_loading_list_layout_delivery"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/picking_count"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/take_out_loading_list_edit_picking_count_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:textAlignment="textEnd"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"
+                        android:enabled="false" />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/box"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/take_out_loading_list_edit_picking_count_ea"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:textAlignment="textEnd"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector"
+                        android:enabled="false"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/ea"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/take_out_loading_list_layout_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/take_out_loading_list_layout_picking_count"
+            android:layout_above="@+id/take_out_loading_list_btn_loading">
+
+            <TextView
+                android:id="@+id/take_out_loading_list_text_total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/total_count"
+                android:textColor="#504f4f"/>
+
+            <LinearLayout
+                android:id="@+id/ll_list_info_list"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#939393"
+                    >
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/goods_code"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/goods_name"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/box"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ea"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/take_out_loading_list_info_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:id="@+id/arrival_check_layout_list_title"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#939393"
+                    >
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/picking_pallet"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loading_pallet"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/take_out_loading_list_plt_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/take_out_loading_list_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.vertexid.wms">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.honeywell.decode.permission.DECODE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.vertexid.wms.LogInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.WareHouseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.ArrivalCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:excludeFromRecents="true">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.ArrivalDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.WareHouseNumberSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.PileUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.PileUpGoodsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.warehouse.SerialScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutPickingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutNumSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutSerialScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutPickingTotalActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutPickingTotalDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutDistributionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutDivideDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutLoadingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutLoadingDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.takeout.TakeOutWaveNumSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryin.CarryInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryin.CarryInCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryin.CarryInCheckDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryin.CarryInCheckSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryin.CarryInPileUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryin.CarryInPileUpGoodsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryout.CarryOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryout.CarryOutPickingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.carryout.CarryOutSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryMoveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryTempMoveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryTempMoveLocActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryInquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryInquiryDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryCreateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryStateChangeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryStateChangeDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryPltDivideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryPltMergeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.inventory.InventoryMoveDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.search.GoodsInquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.search.LocInquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name="com.vertexid.wms.scrn.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <receiver android:name="com.vertexid.wms.receiver.DeviceEvtReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/arrival_check_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".ArrivalCheckActivity">
+
+        <RelativeLayout
+            android:id="@+id/arrival_check_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <FrameLayout
+                android:id="@+id/arrival_check_layout_btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/arrival_check_btn_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/btn_menu_desc"
+                    android:background="@drawable/title_btn_selector"
+                    android:layout_gravity="center"
+                    android:clickable="false"/>
+            </FrameLayout>
+            <!--<Button
+                android:id="@+id/arrival_check_btn_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/btn_menu_desc"
+                android:background="@drawable/title_btn_selector"/>-->
+
+            <TextView
+                android:id="@+id/arrival_check_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/arrival_check_layout_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/arrive_check"
+                android:textColor="#e9bf9a"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/arrival_check_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.15sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/arrival_check_layout_bottom_btns"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/arrival_check_btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_big_btn_selector"/>
+
+            <LinearLayout
+                android:id="@+id/arrival_check_layout_btns"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_small_btn_selector"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="45.5dp"
+                    android:background="@drawable/btn_botton_line">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/arrival_check_btn_all_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="45.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/all_select_small_btn_selector"/>
+
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="45.5dp"
+                    android:background="@drawable/btn_botton_line">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/arrival_check_btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="45.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/decision_small_btn_selector"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arrival_check_layout_info_warehouse_number"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/arrival_check_layout_title">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/warehouse_number"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/arrival_check_btn_inquiry"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/btn_title_inquiry"
+                    android:textSize="10sp"
+                    android:textColor="#504f4f"
+                    android:background="@drawable/inquiry_btn_selector"/>
+
+                <EditText
+                    android:id="@+id/arrival_check_edit_warehouse_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/arrival_check_btn_inquiry"
+                    android:layout_marginRight="5dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="15sp"
+                    android:textColor="#504f4f"
+                    android:background="@drawable/input_selector"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arrival_check_layout_info_goods_code"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrival_check_layout_info_warehouse_number"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_code"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/arrival_check_edit_goods_code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:textColor="#504f4f"
+                android:textSize="15sp"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arrival_check_layout_info_supplier"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrival_check_layout_info_goods_code"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/supplier"
+                android:textSize="15sp"
+                android:textColor="#504f4f"/>
+
+            <EditText
+                android:id="@+id/arrival_check_edit_supplier"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:focusable="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:textSize="15sp"
+                android:textColor="#504f4f"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/arrival_check_text_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/arrival_check_layout_info_supplier"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/total_count"
+            android:textColor="#504f4f"/>
+
+        <LinearLayout
+            android:id="@+id/arrival_check_layout_list_title"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/arrival_check_text_total_count"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#939393">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9">
+
+                <CheckBox
+                    android:id="@+id/arrival_item_check_select"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button	="@drawable/check_box_selector"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/goods_code"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/goods_name"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/approval_count"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/check_count"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/arrival_check_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/arrival_check_layout_list_title"
+            android:layout_above="@+id/arrival_check_layout_bottom_btns"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/arrival_check_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/take_out_item_line1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/take_out_item_text_goods_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/goods_code"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_item_text_goods_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/goods_name"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_item_text_direction_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/direction_count"
+            android:textAlignment="textEnd"
+            android:textColor="#504f4f"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/take_out_item_text_picking_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/picking_count"
+            android:textAlignment="textEnd"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_item_text_picking_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/picking_loc"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_item_text_pallet_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plt_id"
+            android:textColor="#504f4f"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</RelativeLayout>

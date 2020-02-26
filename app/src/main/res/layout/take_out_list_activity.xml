@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/take_out_list_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".TakeOutListActivity">
+
+        <RelativeLayout
+            android:id="@+id/take_out_list_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <Button
+                android:id="@+id/take_out_list_btn_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/btn_menu_desc"
+                android:background="@drawable/title_btn_selector"/>
+
+            <TextView
+                android:id="@+id/take_out_list_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/take_out_list_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/take_out_picking_list_title"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/take_out_list_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/take_out_list_layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/take_out_list_layout_title"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/take_out_list_layout_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/take_out_list_num"
+                    android:textSize="15sp"
+                    android:textColor="#504f4f" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+                    <Button
+                        android:id="@+id/take_out_list_btn_search"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/btn_title_inquiry"
+                        android:textSize="10sp"
+                        android:textColor="#504f4f"
+                        android:background="@drawable/inquiry_btn_selector"/>
+                    <EditText
+                        android:id="@+id/take_out_list_edit_take_out_number"
+                        android:layout_width="245dp"
+                        android:layout_height="40dp"
+                        android:layout_toLeftOf="@+id/take_out_list_btn_search"
+                        android:layout_marginRight="5dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#504f4f"
+                        android:selectAllOnFocus="true"
+                        android:background="@drawable/input_selector" />
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_out_list_layout_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_out_list_layout_num"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/goods_code"
+                    android:textSize="15sp"
+                    android:textColor="#504f4f" />
+
+                <EditText
+                    android:id="@+id/take_out_list_edit_goods_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#504f4f"
+                    android:textSize="15sp"
+                    android:selectAllOnFocus="true"
+                    android:background="@drawable/input_selector"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_out_layout_delivery_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_out_list_layout_product"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/delivery_address"
+                    android:textSize="15sp"
+                    android:textColor="#504f4f" />
+
+                <EditText
+                    android:id="@+id/take_out_list_edit_delievery_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:textColor="#504f4f"
+                    android:selectAllOnFocus="true"
+                    android:background="@drawable/input_selector"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/take_out_list_text_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/take_out_list_layout_info"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/total_count"
+            android:textColor="#504f4f" />
+
+
+        <LinearLayout
+            android:id="@+id/take_out_list_listview_title"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/take_out_list_text_total_count"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#939393" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="@string/goods_code"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/goods_name"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:layout_gravity="center_vertical"
+                android:text="@string/direction_count"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:layout_gravity="center_vertical"
+                android:text="@string/picking_count"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/picking_loc_title"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/pltid"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/take_out_list_listview_title"
+            >
+            <ListView
+                android:id="@+id/take_out_list_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <Button
+                android:id="@+id/take_out_list_btn_search_list"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:background="@drawable/search_big_btn_selector"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/take_out_list_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000"
+        />
+
+</android.support.v4.widget.DrawerLayout>

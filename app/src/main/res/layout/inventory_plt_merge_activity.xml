@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_plt_merge_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".InventoryPltMergeActivity">
+
+        <RelativeLayout
+            android:id="@+id/inventory_plt_merge_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bt_title">
+
+            <FrameLayout
+                android:id="@+id/inventory_plt_merge_layout_btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/inventory_plt_merge_btn_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/btn_menu_desc"
+                    android:background="@drawable/title_btn_selector"
+                    android:layout_gravity="center"
+                    android:clickable="false"/>
+            </FrameLayout>
+            <!--<Button
+                android:id="@+id/inventory_plt_merge_btn_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/btn_menu_desc"
+                android:background="@drawable/title_btn_selector"/>-->
+
+            <TextView
+                android:id="@+id/inventory_plt_merge_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inventory_plt_merge_layout_btn_menu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:text="@string/inventory_plt_merge_title"
+                android:textColor="#e9bf9a"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/inventory_plt_merge_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main_scrn"
+                android:textColor="#ffffff"
+                android:textSize="11.15sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_merge_layout_btns"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/inventory_plt_merge_btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_middle_btn_selector"/>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="45.5dp"
+                android:background="@drawable/btn_botton_line">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/inventory_plt_merge_btn_merge"
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/merge_middle_btn_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_merge_layout_loc"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_merge_layout_title"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/from_plt_id"
+                android:textColor="#504f4f"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/inventory_plt_merge_edit_from_plt_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#504f4f"
+                android:textSize="15sp"
+                android:selectAllOnFocus="true"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_merge_layout_merge_plt_id"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_plt_merge_layout_loc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/merge_plt_id"
+                android:textColor="#504f4f"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/inventory_plt_merge_edit_merge_plt_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#504f4f"
+                android:textSize="15sp"
+                android:selectAllOnFocus="true"
+                android:background="@drawable/input_selector"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/inventory_plt_merge_text_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/inventory_plt_merge_layout_merge_plt_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/total_count"
+            android:textColor="#504f4f"/>
+
+        <LinearLayout
+            android:id="@+id/inventory_plt_merge_layout_list_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/inventory_plt_merge_text_total_count"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#939393">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/from_plt_id"
+                android:textColor="#ffffff"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/inventory_plt_merge_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inventory_plt_merge_layout_list_title"
+            android:layout_above="@+id/inventory_plt_merge_layout_btns"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/inventory_plt_merge_navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_contents"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:background="#99000000"/>
+
+</android.support.v4.widget.DrawerLayout>

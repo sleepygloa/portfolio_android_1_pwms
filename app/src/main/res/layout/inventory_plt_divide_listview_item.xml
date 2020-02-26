@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/goods_code"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/goods_name"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_lot_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/lot_id"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_box_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/box_count"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_ea_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/ea_count"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <!--<TextView
+        android:id="@+id/inventory_plt_divide_item_text_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/goods_state"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_to_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tolocation"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/inventory_plt_divide_item_text_to_plt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/topltid"
+        android:textColor="#504f4f"
+        android:textSize="13sp"/>-->
+
+</LinearLayout>

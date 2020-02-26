@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/take_out_item_line1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/take_out_loading_top_item_text_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/product"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_loading_top_item_text_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/product"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/take_out_loading_top_item_text_picking_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/picking_box"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:textAlignment="textEnd"/>
+        <TextView
+            android:id="@+id/take_out_loading_top_item_text_picking_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/picking_ea"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+</RelativeLayout>

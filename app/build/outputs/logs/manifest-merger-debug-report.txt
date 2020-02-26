@@ -1,0 +1,541 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+MERGED from [com.android.support:design:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\c5a14b519c2ea97357f4eaa0ee6747f2\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\f7521f68f8b023fc1ba7207fa8698caa\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\095ecf84c9f126a28551db2d05e849db\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\e4cbedcdc823dc2a92869535a71ac8ef\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\104388445fa724a7cedf5c0d1e824b2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\4ce0e3bc127843ec176e8edd0e8397b4\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7c08da313e7610085e433517555a2658\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\e694dbaf31cbfb8cea00bba12347ebc2\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\c34c1cc8c22e6067eb01b6aa82c49408\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\4d939f0eb0371154e0bd38d98d8f9294\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\131cb9f71ac0a3372144bb1c0ad6d01d\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e948a241cf5c661c7b8702eeaa3844f1\AndroidManifest.xml:17:1-27:12
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+	package
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:3:11-37
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:1-339:12
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:7:22-73
+uses-permission#android.permission.INTERNET
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:10:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:11:22-78
+uses-permission#com.honeywell.decode.permission.DECODE
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:12:22-75
+application
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:14:5-337:19
+MERGED from [com.android.support:design:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\c5a14b519c2ea97357f4eaa0ee6747f2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\c5a14b519c2ea97357f4eaa0ee6747f2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\f7521f68f8b023fc1ba7207fa8698caa\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\f7521f68f8b023fc1ba7207fa8698caa\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\095ecf84c9f126a28551db2d05e849db\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\095ecf84c9f126a28551db2d05e849db\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\e4cbedcdc823dc2a92869535a71ac8ef\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\e4cbedcdc823dc2a92869535a71ac8ef\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\4ce0e3bc127843ec176e8edd0e8397b4\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\4ce0e3bc127843ec176e8edd0e8397b4\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7c08da313e7610085e433517555a2658\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7c08da313e7610085e433517555a2658\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\e694dbaf31cbfb8cea00bba12347ebc2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\e694dbaf31cbfb8cea00bba12347ebc2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\c34c1cc8c22e6067eb01b6aa82c49408\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\c34c1cc8c22e6067eb01b6aa82c49408\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\4d939f0eb0371154e0bd38d98d8f9294\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\4d939f0eb0371154e0bd38d98d8f9294\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\131cb9f71ac0a3372144bb1c0ad6d01d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\131cb9f71ac0a3372144bb1c0ad6d01d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e948a241cf5c661c7b8702eeaa3844f1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e948a241cf5c661c7b8702eeaa3844f1\AndroidManifest.xml:25:5-20
+	android:supportsRtl
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:17:9-41
+	android:icon
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:16:9-36
+	android:allowBackup
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:15:9-36
+	android:theme
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.vertexid.wms.LogInActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:21:9-30:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:23:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:24:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:22:13-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:26:13-29:29
+action#android.intent.action.MAIN
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:27:17-68
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.vertexid.wms.MainActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:32:9-37:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:34:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:35:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:33:13-57
+activity#com.vertexid.wms.scrn.warehouse.WareHouseActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:39:9-44:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:41:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:42:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:40:13-77
+activity#com.vertexid.wms.scrn.warehouse.ArrivalCheckActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:46:9-52:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:48:13-49
+	android:excludeFromRecents
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:50:13-46
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:49:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:47:13-80
+activity#com.vertexid.wms.scrn.warehouse.ArrivalDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:54:9-59:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:56:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:57:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:55:13-81
+activity#com.vertexid.wms.scrn.warehouse.WareHouseNumberSearchActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:61:9-66:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:63:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:64:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:62:13-89
+activity#com.vertexid.wms.scrn.warehouse.PileUpActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:68:9-73:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:70:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:71:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:69:13-74
+activity#com.vertexid.wms.scrn.warehouse.PileUpGoodsListActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:75:9-80:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:77:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:78:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:76:13-83
+activity#com.vertexid.wms.scrn.warehouse.SerialScanActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:82:9-87:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:84:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:85:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:83:13-78
+activity#com.vertexid.wms.scrn.takeout.TakeOutActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:89:9-94:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:91:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:92:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:90:13-73
+activity#com.vertexid.wms.scrn.takeout.TakeOutListActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:96:9-99:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:98:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:99:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:97:13-77
+activity#com.vertexid.wms.scrn.takeout.TakeOutPickingActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:101:9-104:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:103:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:104:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:102:13-80
+activity#com.vertexid.wms.scrn.takeout.TakeOutNumSearchActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:106:9-109:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:108:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:109:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:107:13-82
+activity#com.vertexid.wms.scrn.takeout.TakeOutSerialScanActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:111:9-114:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:113:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:114:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:112:13-83
+activity#com.vertexid.wms.scrn.takeout.TakeOutPickingTotalActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:116:9-119:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:118:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:119:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:117:13-85
+activity#com.vertexid.wms.scrn.takeout.TakeOutPickingTotalDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:121:9-124:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:123:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:124:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:122:13-91
+activity#com.vertexid.wms.scrn.takeout.TakeOutDistributionActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:126:9-129:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:128:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:129:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:127:13-85
+activity#com.vertexid.wms.scrn.takeout.TakeOutDivideDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:131:9-134:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:133:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:134:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:132:13-85
+activity#com.vertexid.wms.scrn.takeout.TakeOutLoadingActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:136:9-139:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:138:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:139:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:137:13-80
+activity#com.vertexid.wms.scrn.takeout.TakeOutLoadingDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:141:9-144:80
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:143:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:144:13-77
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:142:13-86
+activity#com.vertexid.wms.scrn.takeout.TakeOutWaveNumSearchActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:146:9-149:67
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:148:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:149:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:147:13-86
+activity#com.vertexid.wms.scrn.carryin.CarryInActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:151:9-156:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:153:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:154:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:152:13-73
+activity#com.vertexid.wms.scrn.carryin.CarryInCheckActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:158:9-163:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:160:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:161:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:159:13-78
+activity#com.vertexid.wms.scrn.carryin.CarryInCheckDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:165:9-170:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:167:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:168:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:166:13-84
+activity#com.vertexid.wms.scrn.carryin.CarryInCheckSearchActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:172:9-177:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:174:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:175:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:173:13-84
+activity#com.vertexid.wms.scrn.carryin.CarryInPileUpActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:179:9-184:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:181:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:182:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:180:13-79
+activity#com.vertexid.wms.scrn.carryin.CarryInPileUpGoodsListActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:186:9-191:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:188:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:189:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:187:13-88
+activity#com.vertexid.wms.scrn.carryout.CarryOutActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:193:9-198:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:195:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:196:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:194:13-75
+activity#com.vertexid.wms.scrn.carryout.CarryOutPickingActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:200:9-205:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:202:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:203:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:201:13-82
+activity#com.vertexid.wms.scrn.carryout.CarryOutSearchActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:207:9-212:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:209:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:210:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:208:13-81
+activity#com.vertexid.wms.scrn.inventory.InventoryActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:214:9-219:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:216:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:217:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:215:13-77
+activity#com.vertexid.wms.scrn.inventory.InventoryMoveActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:221:9-226:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:223:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:224:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:222:13-81
+activity#com.vertexid.wms.scrn.inventory.InventoryTempMoveActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:228:9-233:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:230:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:231:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:229:13-85
+activity#com.vertexid.wms.scrn.inventory.InventoryTempMoveLocActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:235:9-240:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:237:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:238:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:236:13-88
+activity#com.vertexid.wms.scrn.inventory.InventoryInquiryActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:242:9-247:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:244:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:245:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:243:13-84
+activity#com.vertexid.wms.scrn.inventory.InventoryInquiryDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:249:9-254:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:251:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:252:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:250:13-90
+activity#com.vertexid.wms.scrn.inventory.InventoryCreateActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:256:9-261:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:258:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:259:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:257:13-83
+activity#com.vertexid.wms.scrn.inventory.InventoryStateChangeActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:263:9-268:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:265:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:266:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:264:13-88
+activity#com.vertexid.wms.scrn.inventory.InventoryStateChangeDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:270:9-275:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:272:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:273:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:271:13-94
+activity#com.vertexid.wms.scrn.inventory.InventoryPltDivideActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:277:9-282:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:279:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:280:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:278:13-86
+activity#com.vertexid.wms.scrn.inventory.InventoryPltMergeActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:284:9-289:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:286:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:287:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:285:13-85
+activity#com.vertexid.wms.scrn.inventory.InventoryMoveDetailActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:291:9-296:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:293:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:294:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:292:13-87
+activity#com.vertexid.wms.scrn.search.SearchActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:298:9-303:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:300:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:301:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:299:13-71
+activity#com.vertexid.wms.scrn.search.GoodsInquiryActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:305:9-310:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:307:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:308:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:306:13-77
+activity#com.vertexid.wms.scrn.search.LocInquiryActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:312:9-317:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:314:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:315:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:313:13-75
+activity#com.vertexid.wms.scrn.setting.SettingActivity
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:319:9-324:20
+	android:screenOrientation
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:321:13-49
+	android:windowSoftInputMode
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:322:13-64
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:320:13-73
+receiver#com.vertexid.wms.receiver.DeviceEvtReceiver
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:326:9-335:20
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:326:19-77
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:327:13-329:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:328:17-78
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:328:25-76
+intent-filter#action:name:android.intent.action.PACKAGE_REPLACED+data:scheme:package
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:331:13-334:29
+action#android.intent.action.PACKAGE_REPLACED
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:332:17-80
+	android:name
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:332:25-78
+data
+ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:333:17-49
+	android:scheme
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml:333:23-47
+uses-sdk
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\c5a14b519c2ea97357f4eaa0ee6747f2\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\c5a14b519c2ea97357f4eaa0ee6747f2\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\f7521f68f8b023fc1ba7207fa8698caa\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\f7521f68f8b023fc1ba7207fa8698caa\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\095ecf84c9f126a28551db2d05e849db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\095ecf84c9f126a28551db2d05e849db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\e4cbedcdc823dc2a92869535a71ac8ef\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\e4cbedcdc823dc2a92869535a71ac8ef\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\104388445fa724a7cedf5c0d1e824b2e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\104388445fa724a7cedf5c0d1e824b2e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\4ce0e3bc127843ec176e8edd0e8397b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\4ce0e3bc127843ec176e8edd0e8397b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7c08da313e7610085e433517555a2658\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7c08da313e7610085e433517555a2658\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\e694dbaf31cbfb8cea00bba12347ebc2\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\e694dbaf31cbfb8cea00bba12347ebc2\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\c34c1cc8c22e6067eb01b6aa82c49408\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\c34c1cc8c22e6067eb01b6aa82c49408\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\4d939f0eb0371154e0bd38d98d8f9294\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\4d939f0eb0371154e0bd38d98d8f9294\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\131cb9f71ac0a3372144bb1c0ad6d01d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\131cb9f71ac0a3372144bb1c0ad6d01d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e948a241cf5c661c7b8702eeaa3844f1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e948a241cf5c661c7b8702eeaa3844f1\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.2.0] C:\Users\sleep\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\c5a14b519c2ea97357f4eaa0ee6747f2\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		ADDED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
+		INJECTED from D:\wms\workspace\VertexID-ANDROID\app\src\main\AndroidManifest.xml
